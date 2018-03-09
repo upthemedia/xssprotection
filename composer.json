@@ -1,0 +1,16 @@
+{
+    "name": "upthemedia/xss-protection",
+    "description": "filter xss in inputs",
+    "type": "library",
+    "require": {
+        "laravel/laravel": "^5.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Suárez Bravo",
+            "email": "jsuarez@upthemedia.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
