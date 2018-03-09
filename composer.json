@@ -1,6 +1,7 @@
 {
     "name": "upthemedia/xss-protection",
     "description": "filter xss in inputs",
+    "keywords": ["laravel", "xss"],
     "type": "library",
     "require": {
         "php": ">=5.3.0",
@@ -20,6 +21,5 @@
             "Upthemedia\\XssProtection": "src/"
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    "minimum-stability": "stable"
 }
