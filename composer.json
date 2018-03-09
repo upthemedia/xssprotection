@@ -13,5 +13,5 @@
             "email": "jsuarez@upthemedia.com"
         }
     ],
-    "minimum-stability": "stable"
-}
+    "minimum-stability": "dev",
+    "prefer-stable": true,
