@@ -13,6 +13,13 @@
             "email": "jsuarez@upthemedia.com"
         }
     ],
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-0": {
+            "Upthemedia\\XssProtection": "src/"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
