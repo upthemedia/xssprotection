@@ -3,6 +3,7 @@
     "description": "filter xss in inputs",
     "type": "library",
     "require": {
+        "php": ">=5.3.0",
         "laravel/laravel": "^5.4"
     },
     "license": "MIT",
