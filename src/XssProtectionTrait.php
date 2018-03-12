@@ -134,6 +134,7 @@ trait XssProtectionTrait
 			return $str;
 		}
 
+		if($str == "" || is_null($str) || !$str || is_numeric($str)) return $str;	
 		// Remove Invisible Characters
 		$str = $this->remove_invisible_characters($str);
 
