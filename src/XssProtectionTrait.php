@@ -386,7 +386,6 @@ trait XssProtectionTrait
 			{
 				// If random_bytes() can't do the job, we can't either ...
 				// There's no point in using fallbacks.
-				log_message('error', $e->getMessage());
 				return FALSE;
 			}
 		}
