@@ -564,6 +564,7 @@ trait XssProtectionTrait
 	 */
 	protected function _urldecodespaces($matches)
 	{
+		return $matches[0];
 		$input    = $matches[0];
 		$nospaces = preg_replace('#\s+#', '', $input);
 		return ($nospaces === $input)
