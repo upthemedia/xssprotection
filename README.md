@@ -1,5 +1,6 @@
 # xssprotection
 Block the XSS entry globally in your Laravel projects.
+It can be used in two different ways. Or through a middleware that affects all the requests, or through the FormRequest
 # Install 
 ## composer
     composer require upthemedia/xss-protection
