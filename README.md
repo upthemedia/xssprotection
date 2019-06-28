@@ -1,4 +1,5 @@
 # xssprotection
+Block the XSS entry globally in your Laravel projects.
 # Install 
 ## composer
     composer require upthemedia/xss-protection
