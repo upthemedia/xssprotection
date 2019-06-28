@@ -6,7 +6,7 @@ Block the XSS entry globally in your Laravel projects.
 
 ## Configuration
 **Use Middleware**
-To use globally throughout the project it is necessary to create a middeware
+To use globally throughout the project it is necessary to create a middeware and add it to Kernel.php in protected $middleware
 
     <?php
     namespace App\Http\Middleware;  
@@ -25,6 +25,28 @@ To use globally throughout the project it is necessary to create a middeware
 			return $next($request);
 		}
 	}
+	
+File Kernel.php
+
+    <?php  
+    namespace App\Http;  
+    use Illuminate\Foundation\Http\Kernel as HttpKernel;  
+    
+    class Kernel extends HttpKernel{  
+    /**
+    * The application's global HTTP middleware stack.
+    * These middleware are run during every request to your application. 
+    * 
+    * @var array   
+    */  
+    protected $middleware = [
+	     \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,  			
+	     \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,  
+	     \App\Http\Middleware\TrimStrings::class,  
+	     \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,  
+	     \App\Http\Middleware\XssClean::class  //Add Middleware XSS
+	      ];
+
 **Use in FormRequest**
 To use in FormRequest it is only necessary to import the XssProtectionTrait
 In this case it will execute the clean xss on both inputs
