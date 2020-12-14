@@ -17,7 +17,7 @@
         "classmap": [
         ],
         "psr-0": {
-            "Upthemedia\\XssProtection": "src/"
+            "Upthemedia\\XssProtection\\": "src/"
         }
     },
     "minimum-stability": "dev",
