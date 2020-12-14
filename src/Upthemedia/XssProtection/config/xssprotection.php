@@ -1,7 +1,5 @@
 <?php
 
-return [
-
+return array(
     'charset' => 'UTF-8',
-    
-];
+);
